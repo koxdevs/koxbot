@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Dashboard</title>
+    <style>
+        body {
+            background-color: #111111;
+            font-family: Verdana, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: transparent;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: #c2c2c2ec;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        .profile {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        .profile p {
+            margin-top: 10px;
+        }
+
+        .widget {
+            background-color: #1c1c1c;
+            border: 1px solid #cccccc5e;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px auto; /* Centra il widget orizzontalmente */
+            max-width: 600px; /* Imposta una larghezza massima */
+        }
+
+        /* Stile del testo "key" */
+        .key {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        .key3::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -2px;
+            height: 2px;
+            background-color: transparent; /* Inizialmente, la linea è trasparente */
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+          }
+          
+          .key3:hover {
+            color: #01A0EF; /* Cambia il colore del testo a azzurro */
+            text-shadow: 0 0 10px #01A0EF; /* Aggiungi un effetto glow azzurro */
+          }
+          
+          .key3:hover::after {
+            transform: scaleX(1); /* Mostra la linea sotto il testo */
+            background-color: #01A0EF; /* Cambia il colore della linea a azzurro */
+        }
+
+        .key-divider {
+            border-bottom: 1px solid #cccccc5e; /* Colore e spessore della linea */
+            margin-bottom: 10px; /* Spazio sotto la linea */
+        }
+
+        /* Stile della scritta tra parentesi quadre */
+        .brackets {
+            font-size: 12px; /* Dimensione del carattere */
+            font-style: italic; /* Corsivo */
+            display: inline-block; /* Mostra l'elemento come inline-block */
+            padding: 5px 10px; /* Spaziatura interna */
+            border-radius: 5px; /* Bordo arrotondato */
+            background-color: #242525; /* Colore di sfondo */
+            color: #bbbbbbec;
+        }
+
+        .argument {
+            font-size: 13px;
+            color: #6d6d6dd2; /* Colore normale */
+        }
+
+        .key2 {
+            font-size: 10px;
+            color: #bbbbbbec; /* Colore normale */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="cmd.html">Dashboard</a>
+        <a href="docs.html">Docs</a>
+    </div>
+    <br>
+    <br>
+    <div class="profile">
+        <img src="https://media.discordapp.net/attachments/1136784524760580207/1148025177687461929/discord-avatar-512-F9MHH.png?width=655&height=655" alt="koxpng">
+        <p>kox#4164</p>
+        </div>
+    </div>
+    <br>
+    <div class="widget">
+        <p class="key">>start</p>
+        <p class="key2">start nuke</p>
+        <div class="key-divider"></div>
+        <p class="argument">arguments</p>
+        <p class="brackets">none</p>
+    </div>
+    <div class="widget">
+        <p class="key">>clearnuke</p>
+        <p class="key2">clean server from kox nuke attack</p>
+        <div class="key-divider"></div>
+        <p class="argument">arguments</p>
+        <p class="brackets">none</p>
+    </div>
+    
+</body>
+</html>

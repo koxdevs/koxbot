@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Docs</title>
+    <style>
+        body {
+            background-color: #111111;
+            font-family: Verdana, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: transparent;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: #c2c2c2ec;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        .headline {
+            font-size: 40px;
+        }
+        .headlinep {
+        color: #cccccc5e;   
+        font-size: 12px;
+        }
+
+        .widget {
+            background-color: #1c1c1c;
+            border: 0px solid #cccccc5e;
+            border-radius: 0px;
+            padding: 10px;
+            margin: 10px auto; /* Centra il widget orizzontalmente */
+            max-width: 600px; /* Imposta una larghezza massima */
+        }
+
+        /* Stile del testo "key" */
+        .key {
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+            color: #bbbbbbec;
+        }
+
+
+        .key2 {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #cccccc5e;
+        }
+
+        .key-divider {
+            border-bottom: 1px solid #cccccc5e; /* Colore e spessore della linea */
+            margin-bottom: 10px; /* Spazio sotto la linea */
+        }
+    </style>
+</head>
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="cmd.html">Dashboard</a>
+    <a href="docs.html">Docs</a>
+</div>
+<br>
+<br>
+<center><h1 class="headline">Getting started with Kox</h1>
+</p>
+</center>
+<br>
+
+<div class="widget">
+    <p class="key2">//example command</p>
+    <div class="key-divider"></div>
+    <p class="key">>massdm set 12345678910</p>
+</div>
+<center><p class="headlinep">The command in this case is wrong so 
+the bot will return an error as the id is invalid</p></center>
+<br>
+<div class="widget">
+    <p class="key2">//example command</p>
+    <div class="key-divider"></div>
+    <p class="key">>massdm set 1147652782015385601</p>
+</div>
+<center><p class="headlinep">The id is valid this time so the bot will continue</p></center>
+</body>
+</html>

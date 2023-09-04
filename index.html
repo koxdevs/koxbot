@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kox</title>
+    <style>
+        body {
+            background-color: #111111;
+            text-align: center;
+            font-family: Verdana, sans-serif;
+            color: white;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .headline {
+            font-size: 90px; /* Dimensione maggiore */
+            font-style: italic; /* Corsivo */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Effetto Glow */
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .button {
+            background-color: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            border-radius: 20px;
+            padding: 15px 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="headline">Kox</h1>
+        <div class="button-container">
+            <form action="https://discord.gg/VBuBPAE9d5">
+            <button class="button"><i class="fab fa-discord" style="color: #ffffff;"></i>  Discord</button>
+            </form>
+            <form action="docs.html">
+            <button class="button"><i class="fas fa-book" style="color: #ffffff;"></i>  Docs</button>
+            </form>
+        </div>
+        <br>
+        <form action="cmd.html">
+        <button class="button"><i class="fas fa-terminal" style="color: #ffffff;"></i>  Command</button>
+    </form>
+    </div>
+</body>
+</html>
